@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:serif;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: -5px 0px 5px black;
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .linker {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.navbar .linker span {
+    color: black;
+}
+
+.navbar .linker i {
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header-wrapper {
+    height: 30vh;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(../media/MEPKING/g1.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-wrapper img {
+    width: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: white;
+}
+
+/* HOME PAGE DESIGNING STARTS HERE  */
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.home-wrapper .linker {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+}
+
+.home-wrapper .linker img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: brightness(100%);
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.home-wrapper .linker .text {
+    position: absolute;
+    font-size: 19px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.629);
+    padding: .5rem;
+    z-index: 10;
+    bottom: 3%;
+}
+
+
+/* BROTHERS PAGE STYLING STARTS HERE  */
+
+.brothers .brother-pic {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* INDEX PAGE STYLING STARTS HERE  */
+
+.index-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.index-wrapper .index-pic-1 {
+    height: 60%;
+    object-fit: cover;
+}
+
+.index-wrapper {
+    margin-bottom: -3rem;
+}
+
+.index-wrapper .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.index-wrapper .footer {
+    width: 100%;
+}
+
+.index-wrapper .footer h3 {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.index-wrapper .footer img {
+    width: 10rem;
+}
+
+
+.start-modal {
+    background-color: rgba(128, 128, 128, 0.96);
+    width: 90%;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    justify-content: space-around;
+}
+
+.start-modal h1 {
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.start-modal .a-1 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.start-modal .a-2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* GARDENS PAGE STYLING STARTS HERE  */
+
+.gardens-wrapper {
+    display: flex;
+    flex-direction: column;    
+}
+
+.gardens-wrapper .m-heading {
+    margin-bottom: 1rem;
+}
+
+.gardens-wrapper p.garden-ab {
+    letter-spacing: 1px;
+}
+
+.gardens-wrapper .link-1 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    color: black;
+}
+
+.gardens-wrapper .link-1 img {
+    width: 8rem;
+}
+
+/* RETREAT CENTER PAGE STYLING STARTS HERE  */
+
+.retreat-wrapper {
+    display: flex;
+    flex-direction: column;    
+}
+
+.retreat-wrapper .m-heading {
+    margin-bottom: 1rem;
+}
+
+.retreat-wrapper p.garden-ab {
+    letter-spacing: 1px;
+}
+
+.retreat-wrapper .link-1 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    color: black;
+}
+
+.retreat-wrapper .link-1 img {
+    width: 8rem;
+}
+

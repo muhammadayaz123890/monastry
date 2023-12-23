@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'navbar.html' %}
+{% load static %}
+
+<div class="container mb-5 mt-3">
+    <h1 style="font-family: serif; margin-bottom: 5rem;">
+        Fr.Francis' Artwork
+    </h1>
+
+    <div class="row d-flex flex-row gap-3">
+        {% for work in art %}
+
+        <div class="col-5">
+            <a href="{{work.img.url}}" >
+                <img style="width:100%; height: 10rem;object-fit: contain;" src="{{work.img.url}}" alt="">
+            </a>
+        </div>
+        
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<img src="" alt="">
+
+<div class="container">
+    <img src="{% if layout %} {{layout.lady_img.url}} {% endif %}" alt="" class="img-fluid">
+    <h1 class="mt-3" style="font-family: serif;">Laurens Cemetry</h1>
+    <p class="mt-3">
+        {% if layout %}
+        {{layout.cemetry_text}}
+        {% else %}
+        In 18th century Mepkin was the pricipal home of rice planter, slave trader, and Charleston merchant Henry Laurens(1724-1792). Laurens imported tens of thousands enslaved people from Bunch Island, located in Sierra Leone River, to the South Carolina Lowcountry. The business made him one of the richest men in American before the Revolutionary War. 
+    </p>
+    <br>
+    <br>
+    <p>He was elected to South Carolina's Provincial Congress in 1775, became the Vice...</p>
+    {% endif %}
+</div>
+
+{% endblock %}
